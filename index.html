@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Luques | Portfolio SOC & Ciberseguridad</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --tag-bg: #0369a1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid #334155;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        .social-links {
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            border: 1px solid var(--accent);
+            padding: 6px 16px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent);
+            color: var(--bg-color);
+        }
+
+        section {
+            margin: 3rem 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #334155;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin-top: 0;
+        }
+
+        .tags {
+            margin: 10px 0;
+        }
+
+        .tag {
+            background-color: var(--tag-bg);
+            color: white;
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-top: 10px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            padding: 2rem 0;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Daniel Luques</h1>
+            p class="subtitle">Analista SOC L1 | Ciberseguridad & Triage de Amenazas</p>
+            <div class="social-links">
+                <a href="https://github.com/Daniel-Luques" target="_blank">GitHub</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>Apasionado por la ciberseguridad con enfoque en operaciones de centro de seguridad (SOC), triaje de amenazas, análisis de IOCs y automatización mediante scripts en Python.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos</h2>
+
+            <div class="project-card">
+                <h3 class="project-title">🛡️ VirusTotal SOC Triage Tool</h3>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">Threat Intelligence</span>
+                    <span class="tag">SOC L1</span>
+                </div>
+                <p>Herramienta interactiva desarrollada para automatizar el triaje y análisis de Indicadores de Compromiso (IOCs). Permite consultar hashes (MD5, SHA256) en tiempo real mediante la API v3 de VirusTotal, clasificando la severidad del archivo e integrando buenas prácticas de seguridad para el manejo de credenciales (<code>.env</code> y <code>.gitignore</code>).</p>
+                <a href="https://github.com/Daniel-Luques/vt-soc-triage-tool" target="_blank" class="btn">Ver Repositorio en GitHub</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Daniel Luques - Portfolio de Ciberseguridad</p>
+        </footer>
+    </div>
+
+</body>
+</html>
