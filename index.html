@@ -12,6 +12,7 @@
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
             --tag-bg: #0369a1;
+            --highlight-bg: rgba(56, 189, 248, 0.05);
         }
 
         body {
@@ -44,6 +45,7 @@
         .subtitle {
             font-size: 1.2rem;
             color: var(--text-secondary);
+            margin-top: 0;
         }
 
         .social-links {
@@ -76,6 +78,14 @@
             display: inline-block;
             padding-bottom: 5px;
             margin-bottom: 1.5rem;
+        }
+
+        .highlight-box {
+            background-color: var(--highlight-bg);
+            border-left: 4px solid var(--accent);
+            padding: 1.2rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1rem;
         }
 
         .project-card {
@@ -135,7 +145,7 @@
     <div class="container">
         <header>
             <h1>Daniel Luques</h1>
-            p class="subtitle">Analista SOC L1 | Ciberseguridad & Triage de Amenazas</p>
+            <p class="subtitle">Analista de Ciberseguridad & SOC L1 | Factor Humano & Threat Triage</p>
             <div class="social-links">
                 <a href="https://github.com/Daniel-Luques" target="_blank">GitHub</a>
                 <a href="#" target="_blank">LinkedIn</a>
@@ -144,7 +154,12 @@
 
         <section id="about">
             <h2>Sobre mí</h2>
-            <p>Apasionado por la ciberseguridad con enfoque en operaciones de centro de seguridad (SOC), triaje de amenazas, análisis de IOCs y automatización mediante scripts en Python.</p>
+            <p>Soy un estudiante en formación con una trayectoria que fusiona el profundo análisis del comportamiento humano (<strong>Psicología</strong>) con una sólida base técnica en <strong>Ciberseguridad</strong>. Actualmente me desempeño en el área de Seguridad, una experiencia que me entrenó en la observación detallada, el manejo de incidentes críticos y la orientación a resultados bajo presión.</p>
+            
+            <div class="highlight-box">
+                <strong>💡 Mi propuesta de valor:</strong>
+                <p style="margin-bottom: 0;">Sé identificar las vulnerabilidades técnicas, pero mi background en Psicología me permite anticipar y mitigar el <strong>riesgo humano</strong> (Phishing, Ingeniería Social, Concienciación), que es el eslabón más crítico de cualquier sistema. Busco posiciones <em>entry-level</em> o <em>junior</em> en Ciberseguridad para aplicar mi rigor analítico y capacidad de adaptación.</p>
+            </div>
         </section>
 
         <section id="projects">
